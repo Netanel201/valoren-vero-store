@@ -1,5 +1,5 @@
 // EDIT THESE SETTINGS BEFORE LAUNCH
-const WHATSAPP_NUMBER = "9725XXXXXXXX"; // Replace with your WhatsApp number, digits only.
+const WHATSAPP_NUMBER = "0547715052"; // Replace with your WhatsApp number, digits only.
 const CURRENCY = "₪";
 
 // Replace these sample products with your real products, photos and prices.
