@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <title>VALOREN VERO — Official Store</title>
+  <meta name="description" content="VALOREN VERO — A new standard of streetwear.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">DROP 001 — THE FIRST COLLECTION</div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Valoren Vero home"><span class="monogram">VV</span><span>VALOREN VERO</span></a>
+    <nav><a href="#shop">SHOP</a><a href="#story">ABOUT</a><a href="#contact">CONTACT</a></nav>
+    <button class="cart-button" id="cart-open" aria-label="Open shopping bag">BAG <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT STREETWEAR · EST. 2026</p>
+        <h1>MORE THAN<br><em>A BRAND.</em></h1>
+        <p class="hero-sub">A new standard of streetwear.</p>
+        <a class="button button-light" href="#shop">SHOP THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <div class="hero-mark">VV</div>
+        <div class="hero-caption">VALOREN VERO<br>DROP 001</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>VALOREN VERO</span><b>✳</b><span>DEFINED BY PRESENCE</span><b>✳</b><span>DROP 001</span></section>
+
+    <section class="shop section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>SHOP <em>ALL</em></h2></div>
+        <p class="muted">Discover the first VALOREN VERO pieces.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">ALL</button>
+        <button class="filter" data-category="T-Shirts">T-SHIRTS</button>
+        <button class="filter" data-category="Hoodies">HOODIES</button>
+        <button class="filter" data-category="Pants">PANTS</button>
+        <button class="filter" data-category="Hats">HATS</button>
+        <button class="filter" data-category="Accessories">ACCESSORIES</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="statement" id="story">
+      <p class="eyebrow">THE VALOREN VERO IDENTITY</p>
+      <h2>DEFINED BY<br><em>PRESENCE.</em></h2>
+      <p>Built around simplicity, confidence and considered design.<br>Welcome to VALOREN VERO.</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div><p class="eyebrow">NEED HELP?</p><h2>LET'S TALK.</h2><p class="muted">Questions about sizing, products or an order?</p></div>
+      <a class="button button-outline" id="contact-whatsapp" href="#" target="_blank" rel="noopener">CONTACT US ON WHATSAPP ↗</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="monogram">VV</span><span>VALOREN VERO</span></a><span>© 2026 VALOREN VERO</span><span>DROP 001</span></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
+    <div class="drawer-head"><h3>YOUR BAG</h3><button id="cart-close" aria-label="Close">✕</button></div>
+    <div id="cart-items" class="cart-items"><p class="muted">Your bag is empty.</p></div>
+    <div class="drawer-bottom"><div class="total"><span>SUBTOTAL</span><strong id="cart-total">₪0</strong></div><p class="tiny muted">Shipping is confirmed after order details.</p><button class="button button-light full" id="checkout">ORDER VIA WHATSAPP ↗</button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="product-modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-image" id="modal-image"><span>VV</span></div>
+      <div class="modal-info">
+        <p class="eyebrow" id="modal-category"></p><h3 id="modal-name"></h3><p id="modal-price" class="price"></p>
+        <p class="muted">Product details and final photos will be added before launch.</p>
+        <label for="modal-size">SIZE</label><select id="modal-size"><option value="">Choose a size</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>One Size</option></select>
+        <label for="modal-color">COLOR</label><select id="modal-color"><option>Black</option><option>Purple</option><option>White</option></select>
+        <button class="button button-light full" id="add-to-cart">ADD TO BAG</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
